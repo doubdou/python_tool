@@ -11,12 +11,9 @@ def get_dir(path):
             abs_name = os.path.join(dirname, file)
             if re.match('(.*).txt', abs_name):
                 continue
-            fileList.append(abs_name)
-    return abs_name
+            print(abs_name)
 
 
 if __name__ == '__main__':
-    namelist = []
-    namelist = get_dir("E:\\network_channel")
-    for n in namelist:
-        print(n)
+    get_dir("E:\\network_channel")
+
